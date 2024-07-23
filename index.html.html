@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSRTAP</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <style>
+      .navbar {
+  width: 100%;
+  background-color:pink;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color:blanchedalmond;
+}
+
+.active {
+  background-color: blanchedalmond;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+div.scroll-container {
+  background-color:pink;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+h1{
+font-size:30px;
+float:left;
+}
+div.gallery {
+ padding:3%;
+}
+
+div.gallery:hover {
+border: 2px solid black;
+font-size:20px;
+}
+
+div.gallery img {
+  width: 100%;
+ 
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container1 {
+  position: absolute;
+}
+
+.image {
+ float:left;
+  padding:4%;
+}
+.coffee{
+height:400px;
+background-color:pink;
+padding:2%;
+}
+.content{
+ display:flex;
+ justify-content:space-around;
+ align-items:center;
+ background-color:pink;
+ }
+ .para{
+ width:600px;
+ text-align:justify;
+ background-color:pink;
+}
+.icecream{
+height:400px;
+background-color:pink;
+padding:2%
+}
+.salad{
+height:400px;
+background-color:pink;
+padding:2%
+}
+.roll{
+height:400px;
+background-color:pink;
+padding:2%
+}
+.vegetable{
+height:400px;
+background-color:pink;
+padding:2%
+}
+
+body {
+   box-sizing:border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column1 {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 500px) {
+  .column1 {
+   
+    display: block;
+  }
+}
+
+.card {
+  box-shadow:pink;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: black;
+  background-color:pink;
+  text-align: center;
+  cursor: pointer;
+  
+}
+
+.button:hover {
+  background-color:blanchedalmond;
+}
+
+</style>
+</head>
+<body>
+  <div class="fixed-top">
+    <header>
+  <div class="navbar">
+    <h1>food and fun</h1>
+    <a class="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+    <a href="#"><i class="fa-solid fa-bowl-food"></i> food</a> 
+    <a href="#"><i class="fa-solid fa-photo-film"></i>features</a>
+    <a href="#"><i class="fa-brands fa-shopify"></i>shop</a>
+    <a href="#"><i class="fa-solid fa-user"></i>about me</a>
+    <a href="#"><i class="fa-regular fa-id-badge"></i>contact</a>
+  </header>
+  </div>
+  
+  <div class="scroll-container">
+    <img src="bootstrap images/dessert1.jpg" alt="desserts" width="600" height="400">
+    <img src="bootstrap images/milky1.jpeg" alt="desserts" width="600" height="400">
+    <img src="bootstrap images/desserts1.jpg" alt="desserts" width="600" height="400">
+    <img src="bootstrap images/bun1.jpeg" alt="desserts" width="600" height="400">
+    <img src="bootstrap images/desss1.jpg" alt="desserts" width="600" height="400">
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="bootstrap images/breakfast2.jpeg">
+       <img src="bootstrap images/breakfast2.jpeg" alt="Break Fast" width="600" height="300" class="rounded">
+      </a>
+      <div class="desc">Break Fast</div>
+    </div>
+  </div>
+  
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="bootstrap images/des2.jpg">
+        <img src="bootstrap images/des2.jpg" alt="Dessert" width="500" height="300" class="rounded">
+      </a>
+      <div class="desc">Desserts</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="bootstrap images/images/smoothies2.jpg">
+        <img src="bootstrap images/smoothies2.jpg" alt="smoothie" width="600" height="300" class="rounded">
+      </a>
+      <div class="desc">Smoothie</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="bootstrap images/cake2.jpg">
+        <img src="bootstrap images/cake2.jpg" alt="cakes" width="600" height="300" class="rounded">
+      </a>
+      <div class="desc">Cakes</div>
+    </div>
+  </div>
+  
+  <div class="clearfix"></div>
+  
+  <div class="coffee">
+    <div class="content">
+  <img src="bootstrap images/coffee3.jpeg" height="250" class="rounded">
+    <div class="para">
+      <h1>Diy coffee:How to make the best home made latte</h1></br></br>
+      <p>Sweet &nbsp&nbsp July 18,2024 &nbsp&nbsp <i class="fa-regular fa-heart"></i>54 &nbsp&nbsp 1,234VIEWS</br></br>
+      This cake can be prepared one day ahead.</br> Sweetened cream of coconut is available </br>in the liquor section of most supermarkets.
+      </p>
+  <button type="button" class="btn btn-link">read more</button>
+      </div>
+    </div>
+  </div>
+     
+  <div class="icecream">
+    <div class="content">
+  <img src="bootstrap images/icecream3.jpg" height="300" width="350" class="rounded">
+      <div class="para">
+          <h1>Gluten free almond cakes with berries</h1></br></br>
+  <p>Healthy &nbsp&nbsp July 18,2024 &nbsp&nbsp <i class="fa-regular fa-heart"></i>54 &nbsp&nbsp 1,234VIEWS</br></br>
+  Chunks of fresh cranberries and dark, </br> milk, and white chocolate chips dress up </br> oatmeal cookies for the holidays.
+  </p>
+  <button type="button" class="btn btn-link">read more</button>
+          </div>
+        </div>
+        </div>
+   
+  <div class="sald">
+      <div class="content">
+  <img src="bootstrap images/salad3.jpg" height="300" width="350" class="rounded">
+      <div class="para">
+  <h1>17 Easy & Healthy dishes</h1></br></br>
+  <p>Healthy &nbsp&nbsp July 18,2024 &nbsp&nbsp <i class="fa-regular fa-heart"></i>54 &nbsp&nbsp 1,234VIEWS</br></br>
+  I could if you hadn't turned on the light and shut off </br> my stereo. Check it out, y'all. Everyone who was invited </br> is here. Daddy Bender, we’re hungry. No. We’re…
+  </p>
+  <button type="button" class="btn btn-link">read more</button>
+          </div>
+        </div>
+        </div>
+   
+  <div class="roll">
+      <div class="content">
+      <img src="bootstrap images/roll3.jpg" height="300" width="350" class="rounded">
+        <div class="para">
+          <h1>Chashu summer roll recipe</h1></br></br>
+  <p>Healthy &nbsp&nbsp July 18,2024 &nbsp&nbsp <i class="fa-regular fa-heart"></i>54 &nbsp&nbsp 1,234VIEWS</br></br>
+  This cake can be prepared one day ahead. </br> Sweetened cream of coconut is available in the </br> liquor section of most supermarkets.
+     </p>
+  <button type="button" class="btn btn-link">read more</button>
+          </div>
+        </div>
+        </div>
+   
+  <div class="vegetable">
+        <div class="content">
+      <img src="bootstrap images/vegetables3.jpg" height="300" width="350" class="rounded">
+        <div class="para">
+         <h1>Goat cheese polenta with vegetables</h1></br></br>
+  Healthy &nbsp&nbsp July 18,2024 &nbsp&nbsp <i class="fa-regular fa-heart"></i>54 &nbsp&nbsp 1,234VIEWS</br></br>
+     <p>Lay the puff pastry over the skillet for a pretty </br> look. Use any brand; the weight may vary, </br> but either way you’ll have enough to work with.
+  </p>
+  <button type="button" class="btn btn-link">read more</button>
+          </div>
+        </div>
+        </div>  
+
+        <h2>Responsive "Meet The Team" Section</h2>
+        <p>Resize the browser window to see the effect.</p>
+        <br>
+        
+        <div class="row">
+          <div class="column1">
+            <div class="card">
+              <img src="bootstrap images/ice4.jpg" alt="icecream" height="300" width="350" class="rounded">
+              <div class="container">
+                <h2>ICE CREAM</h2>
+                <p class="title">Desserts</p>
+                <p>Treat your sweet tooth with authentic fruit essence in ice cream or the classic vanilla and chocolate flavours.</p>
+                <p>example@example.com</p>
+                <p><button class="button">GET IT</button></p>
+              </div>
+            </div>
+          </div>
+         <div class="column1">
+            <div class="card">
+              <img src="bootstrap images/cake4.jpg" alt="Cakes" height="300" width="350" class="rounded">
+              <div class="container">
+                <h2>BIRTHDAY CAKES</h2>
+                <p class="title">Desserts</p>
+                <p>Just Bake provides online cake delivery services in Vishakapatnam and same-day delivery options.</p>
+                <p>example@example.com</p>
+                <p><button class="button">GET IT</button></p>
+              </div>
+            </div>
+          </div>
+         <div class="column1">
+            <div class="card">
+              <img src="bootstrap images/smoothie4.jpg" alt="smoothie" height="300" width="350" class="rounded">
+              <div class="container">
+                <h2>SMOOTHIES</h2>
+                <p class="title">Desserts</p>
+                <p>We use whole fruits and organic veggies, and never any syrups or artificial flavors, colors or preservatives.</p>
+                <p>example@example.com</p>
+                <p><button class="button">GET IT</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2>CONTACT US</h2>
+        <br>
+
+         <form style="background-color:pink">
+          <div class="row mb-3 text-start">
+          <div class="col-md-6">
+          <label for="inputName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="inputName" placeholder="Enter your name">
+          </div>
+          <div class="col-md-6">
+          <label for="inputEmail" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email"> </div>
+          </div>
+          <div class="row mb-3">
+          <div class="col-md-6">
+          <label for="inputDate" class="form-label">Date</label>
+          <input type="date" class="form-control" id="inputDate">
+          </div>
+          <div class="col-md-6">
+          <label for="inputTime" class="form-label">Time</label>
+          <input type="time" class="form-control" id="inputTime">
+          </div>
+          </div>
+          <div class="row mb-3">
+          <div class="col-md-12">
+          <label for="inputMessage" class="form-label">Tell us more</label>
+          <textarea class="form-control" id="inputMessage" rows="3" placeholder="Enter your message"></textarea>
+          </div>
+          </div>
+          <button type="submit" class="btn btn-info">Submit</button>
+         </form>
+  
+</body>
+</html>
